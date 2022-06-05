@@ -8,7 +8,7 @@ function Encabezado() {
     <header className={estilos.encabezado}>
       <div className={estilos.contenedor}>
         <LogoSVG className={estilos.logo} />
-        <a className={estilos.titulo} hreff="/">
+        <a className={estilos.titulo} hreff="/">+
           Metas App
         </a> 
       </div>
