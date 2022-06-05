@@ -20,5 +20,5 @@ function Encabezado() {
     </header>
   );
 }
-
+// cambio prueba
 export default Encabezado;
