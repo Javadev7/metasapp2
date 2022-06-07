@@ -8,12 +8,12 @@ function Principal({children}) {
       <div className={estilos.principal}>
         <aside className={estilos.aside}>
           <Botonmenu 
-          href="/lista" 
+          to="/lista" 
           texto="Lista de Metas"
           Icono={ListaSVG}/>
            
           <Botonmenu 
-          href="/crear" 
+          to="/nueva" 
           texto="Nueva Meta"
           Icono={NuevaSVG}/>
        </aside>

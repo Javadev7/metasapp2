@@ -14,7 +14,7 @@ function Encabezado() {
       </div>
       <nav>
         <Botonmenu 
-          href="/perfil" 
+          to="/perfil" 
           Icono={PerfilSVG} />
       </nav>
     </header>

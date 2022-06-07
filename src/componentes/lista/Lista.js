@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { Contexto } from '../../servicios/Memoria';
 import Meta from './Meta';
 
 const listaMock = [{
@@ -30,11 +32,16 @@ const listaMock = [{
 "plazos": "2030-01-01",
 "completado": 5
 
-}];
+    }
+];
+
 
 function Lista(){
+
+    const prueba = useContext(Contexto)
+   console.log(prueba)
     return (
-        listaMock.map(meta =><Meta {...meta}></Meta>)
+        listaMock.map(meta => <Meta key={meta.id} {...meta}></Meta>)
     );
 }
 

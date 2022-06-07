@@ -1,7 +1,8 @@
 import estilos from './Meta.module.css'
 
 
-function Meta({icono, eventos,periodo,detalles,meta, completado}){
+
+function Meta({icono, eventos,periodo,detalles,meta,completado}){
 
 
     return (
