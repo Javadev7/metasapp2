@@ -27,6 +27,7 @@ function Detalles() {
     const crear = async () =>{
         console.log(form)
     }
+    
 
 const frecuencias = ["dia","semana","mes","año"];
 const iconos = ["🏃‍♂️","🌍","📚","🎸","📝"]
