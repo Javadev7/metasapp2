@@ -10,11 +10,10 @@ function App() {
   return (
     <Routes>
         <Route path="/" element={<Layout/>}>  
-        <Route index element={<Lista/>} />
-
-          <Route path="/lista" element={<Lista/>} />
-          <Route path="/nueva" element={<Detalles/>} />
-        </Route>
+          <Route index element={<Lista/>} />
+            <Route path="/lista" element={<Lista/>} />
+            <Route path="/nueva" element={<Detalles/>} />
+          </Route>
         <Route path="*" element={<NoEncontrado/>} />
   </Routes>
   );
