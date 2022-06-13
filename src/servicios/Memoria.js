@@ -44,9 +44,20 @@ function reductor(estado, accion) {
               const metas = accion.metas;
               const nuevoEstado = {
                   orden: metas.map(meta => meta.id),
-                  obejtos: metas.reduce((objeto, meta) =>( { ...objeto, [meta.id]: meta }), {})
+                  objetos: metas.reduce((objeto, meta) =>( { ...objeto, [meta.id]: meta }), {})
               }
               return nuevoEstado;
+          }
+              case "crear":{
+                const id = Math.random();//accion.meta.id;
+                const nuevoEstado = {
+                    orden:[...estado.orden, id],
+                    objetos: {
+                        ...estado.objetos,
+                        [id]: accion.meta
+                    }
+                }
+                return nuevoEstado;
           }
       }  
 }
