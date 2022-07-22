@@ -1,17 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Interface } from "readline";
+import { Metatype } from "../../tipos/Metatype";
 import estilos from "./Meta.module.css";
 
-interface MetaProps {
-	id: number;
-	icono: string;
-	eventos: number;
-	periodo: number;
-	detalles: string;
-	meta: number;
-	completado: number;
-}
+interface MetaProps extends Metatype {}
+
 function Meta({ id, icono, eventos, periodo, detalles, meta, completado }: MetaProps) {
 	return (
 		/* A React Router Link component that is used to navigate to a different route. */

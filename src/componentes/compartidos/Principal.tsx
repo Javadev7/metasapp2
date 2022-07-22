@@ -2,8 +2,14 @@ import estilos from "./Principal.module.css";
 import Botonmenu from "./Botonmenu";
 import { ReactComponent as ListaSVG } from "../../img/lista.svg";
 import { ReactComponent as NuevaSVG } from "../../img/nueva.svg";
+import React from "react";
 
-function Principal({ children }) {
+
+interface PrincipalProps {
+	children: React.ReactNode;
+}
+
+function Principal({ children }: PrincipalProps) {
 	return (
 		<div className={estilos.principal}>
 			<aside className={estilos.aside}>
